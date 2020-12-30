@@ -27,10 +27,6 @@ functions:
       - http: ANY /
       - http: 'ANY {proxy+}'
 custom:
-  postsBucket: ${self:service}-posts-${self:provider.stage}
-  serverless-offline:
-    noPrependStageInUrl: true
-  domain: nosolopau.com
   customDomain:
     domainName: ${self:provider.stage}.${self:custom.domain}
     certificateName: '*.${self:custom.domain}'
@@ -39,6 +35,10 @@ custom:
     createRoute53Record: true
     endpointType: 'regional'
     autoDomain: false
+  domain: nosolopau.com
+  postsBucket: ${self:service}-posts-${self:provider.stage}
+  serverless-offline:
+    noPrependStageInUrl: true
 resources:
   Resources:
     PostsBucket:

@@ -1,6 +1,7 @@
 body {
     font: 17px Georgia, "Palatino", "Times New Roman", serif;
     color: #333332;
+    padding: 20px;
 }
 
 a {
@@ -19,12 +20,12 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.4em;
     margin-bottom: 0.7em;
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-bottom: 0;
 }
 
@@ -73,12 +74,42 @@ div.post p.date, footer {
     font-size: 0.8em;
 }
 
+div.text {
+    margin-top: 30px;
+}
+
 div.post {
     margin-top:3em;
 }
 
 span.siesta {
     color: #c00;
+}
+
+header h2 a {
+    color: #777;
+}
+
+header h2 a:hover {
+    color: #fff;
+    background-color: #777;
+}
+
+header h1, h2 {
+    margin: 0;
+}
+
+@media only screen and (min-width: 400px) {
+    h1 {
+        font-size: 2.7em;
+        margin-bottom: 0.7em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        margin-bottom: 0;
+    }
+    
 }
 
 @media only screen and (min-width: 700px) {
@@ -105,18 +136,5 @@ span.siesta {
 
     main {
         margin: 50px auto 20px auto;
-    }
-
-    header h1, h2 {
-        margin: 0;
-    }
-
-    header h2 a {
-        color: #777;
-    }
-
-    header h2 a:hover {
-        color: #fff;
-        background-color: #777;
     }
 }
