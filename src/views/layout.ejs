@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/header'); %>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Nosolopau</a></h1>
+      <h2><a href="/<%= process.env.POSTS_PATH %>/the-nickname.html">/nosolopˈaʊ/</a></h2>
+    </header>
+    <main>
+      <%- body %>
+    </main>
+    <footer>
+        <%- include('partials/footer'); %>
+    </footer>
+  </body>
+</html>

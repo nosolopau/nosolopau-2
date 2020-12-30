@@ -1,0 +1,17 @@
+<div class="text">
+    <p>My name is Pablo Torrecilla and I am 60% team leader and mentor, 20% software engineer, and 20% writer. This site is for the first 80%.</p>
+    <p>I write all the time. The last couple of years I've been writing articles on technology and leadership on <a href="https://nosolopau.medium.com" target="_blank">nosolopau.medium.com</a>, 
+        and for more than 10 years I wrote essays in Spanish for <a href="http://nosololinux.com" target="_blank">nosololinux.com</a>, on computer science, politics, chess, free software, and everything I find interesting. 
+    </p>
+    <p>I publish my code to <a href="https://github.com/nosolopau">github.com/nosolopau</a>, including this site.</p>
+</div>
+
+<% for(let post of posts.filter(post => post.file != 'the-nickname.html')) { %>
+    <div class="post">
+        <h2><a href="<%= post.path %>"><%= post.title %></a></h2>
+        <div class="text">
+            <%= post.summary %> <a href="<%= post.path %>">Read more &#8594;</a>
+        </div>
+    </div>        
+<% } %>
+
